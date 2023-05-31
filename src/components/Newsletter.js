@@ -1,4 +1,4 @@
-import { Alert } from 'react-bootstrap';
+import { Alert, Col, Row } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 import e from 'express';
 
