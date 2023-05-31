@@ -294,6 +294,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner button {
+  background-color: transparent;
   color: #fff;
   font-weight: 700;
   font-size: 20px;
