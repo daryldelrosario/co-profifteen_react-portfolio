@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import {Navbar, Nav, Container } from 'react-bootstrap';
 import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
@@ -30,7 +28,7 @@ function NavBar() {
     }
 
     return (
-    <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
+    <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
         <Navbar.Brand href="#home">
             <img src={logo} alt="Logo" />
