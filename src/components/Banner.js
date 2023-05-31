@@ -6,11 +6,16 @@ import headerImg from '../assets/img/header-img.svg';
 function Banner () {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const keepSpace = "H";
+    const leftBlock = "I'm ";
+    const rightBlock = ".";
     const toRotate = [
-        "Web Developer",
-        "Web Designer", 
-        "UI/UX Designer"
+        "a Software Developer",
+        "equipped with JavaScript",
+        "a Full Stack Developer",
+        "comfortable with Java and MySQL",
+        "an Elite Problem Solver",
+        "a Life Long Learner",
+        "a Grateful Husband and Father"
     ];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(100);
@@ -50,12 +55,19 @@ function Banner () {
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio</span>
-                        <h1>{`Hi I'm daryldevcodes `}
+                        <h1>{`My name is Daryl`}
                         <br/>
-                            <span className="wrap">{keepSpace + text}</span>
+                            <span className="txt-rotate">
+                                {leftBlock}
+                                <span className="wrap">
+                                    {text}
+                                </span>
+                                {rightBlock}
+                            </span>
+                            
                         </h1>
-                        <p>
-                            ABOUT ME: Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur alias dolore nesciunt obcaecati quo, eveniet quaerat repudiandae aliquam mollitia non, molestiae, quam maxime quibusdam impedit quis quia incidunt cupiditate magni.
+                        <p className="about-me">
+                            Hello world! My name is Daryl del Rosario and I'm a software developer equipped with JavaScript. Able to full stack with Java and MySQL. On top of that, I'm an elite problem solver, life long learner and very grateful husband and father!
                         </p>
                         <button onClick={() => console.log("connect")}>Let's Connect <ArrowRightCircle size={25}/></button>
                     </Col>
