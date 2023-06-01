@@ -36,7 +36,7 @@ function Skills() {
                     <Col>
                     <TrackVisibility offset={500}>
                     {({ isVisible }) => 
-                        <div className={isVisible ? "animate__animated animate__slideInLeft" : ""}>
+                        <div className={isVisible ? "animate__animated animate__zoomInLeft" : ""}>
                             <div className="skill-bx">
                                 <h2>
                                     Skills
