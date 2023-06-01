@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import headerImg from '../assets/img/header-img.svg';
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 function Banner () {
     const [loopNum, setLoopNum] = useState(0);
@@ -54,25 +56,36 @@ function Banner () {
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
-                        <span className="tagline">Welcome to my Portfolio</span>
-                        <h1>{`My name is Daryl`}
-                        <br/>
-                            <span className="txt-rotate">
-                                {leftBlock}
-                                <span className="wrap">
-                                    {text}
-                                </span>
-                                {rightBlock}
-                            </span>
-                            
-                        </h1>
-                        <p className="about-me">
-                            Hello world! I'm a software developer equipped with JavaScript. Able to full stack with Java and MySQL. On top of that, I'm an elite problem solver, life long learner and a very grateful husband and father!
-                        </p>
-                        <button onClick={() => console.log("connect")}>Let's Connect <ArrowRightCircle size={25}/></button>
+                        <TrackVisibility partialVisibility>
+                        {({ isVisible }) =>
+                            <div className={isVisible ? "animate__animated animate__zoomInDown" : ""}>
+                                <span className="tagline">Welcome to my Portfolio</span>
+                                <h1>{`My name is Daryl`}
+                                <br/>
+                                    <span className="txt-rotate">
+                                        {leftBlock}
+                                        <span className="wrap">
+                                            {text}
+                                        </span>
+                                        {rightBlock}
+                                    </span>
+                                    
+                                </h1>
+                                <p className="about-me">
+                                    Hello world! I'm a software developer equipped with JavaScript. Able to full stack with Java and MySQL. On top of that, I'm an elite problem solver, life long learner and a very grateful husband and father!
+                                </p>
+                                <button onClick={() => console.log("connect")}>Let's Connect <ArrowRightCircle size={25}/></button>
+                            </div>}
+                        </TrackVisibility>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        <img src={headerImg} alt="header image"/>
+                        <TrackVisibility partialVisibility>
+                        {({ isVisible }) => 
+                            <div className={isVisible ? "animate__animated animate__zoomInUp" : ""}>
+                                <img src={headerImg} alt="header image"/>
+                            </div>
+                        }
+                        </TrackVisibility>
                     </Col>
                 </Row>
             </Container>
