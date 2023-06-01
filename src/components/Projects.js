@@ -49,7 +49,7 @@ function Projects() {
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur maiores error omnis voluptate eveniet, temporibus fuga officia. Voluptatum illum magni, quod, labore eum eveniet facilis quas tenetur doloribus quidem in.
                         </p>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                            <Nav variant="pills">
+                            <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                 <Nav.Item>
                                     <Nav.Link eventKey="first">Tab One</Nav.Link>
                                 </Nav.Item>
