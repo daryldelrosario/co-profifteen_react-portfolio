@@ -5,6 +5,8 @@ import meter1 from '../assets/img/meter1.svg';
 import meter2 from '../assets/img/meter2.svg';
 import meter3 from '../assets/img/meter3.svg';
 import colorSharp from '../assets/img/color-sharp.png';
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 function Skills() {
     const responsive = {
@@ -32,32 +34,39 @@ function Skills() {
             <Container>
                 <Row>
                     <Col>
-                        <div className="skill-bx">
-                            <h2>
-                                Skills
-                            </h2>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quibusdam mollitia, consequatur unde corporis maiores obcaecati voluptates veritatis omnis fugiat provident expedita ut nostrum, quae placeat voluptatibus laboriosam rem quaerat.
-                            </p>
-                            <Carousel responsive={responsive} infinite={true} className="skill-slider">
-                                <div className="item">
-                                    <img src={meter1} alt="Image"/>
-                                    <h5>Web Development</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={meter2} alt="Image"/>
-                                    <h5>Brand Identity</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={meter3} alt="Image"/>
-                                    <h5>Logo Design</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={meter1} alt="Image"/>
-                                    <h5>Web Development</h5>
-                                </div>
-                            </Carousel>
+                    <TrackVisibility partialVisibility>
+                    {({ isVisible }) => 
+                        <div className={isVisible ? "animate__animated animate__slideInLeft" : ""}>
+                            <div className="skill-bx">
+                                <h2>
+                                    Skills
+                                </h2>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam quibusdam mollitia, consequatur unde corporis maiores obcaecati voluptates veritatis omnis fugiat provident expedita ut nostrum, quae placeat voluptatibus laboriosam rem quaerat.
+                                </p>
+                                <Carousel responsive={responsive} infinite={true} className="skill-slider">
+                                    <div className="item">
+                                        <img src={meter1} alt="Image"/>
+                                        <h5>Web Development</h5>
+                                    </div>
+                                    <div className="item">
+                                        <img src={meter2} alt="Image"/>
+                                        <h5>Brand Identity</h5>
+                                    </div>
+                                    <div className="item">
+                                        <img src={meter3} alt="Image"/>
+                                        <h5>Logo Design</h5>
+                                    </div>
+                                    <div className="item">
+                                        <img src={meter1} alt="Image"/>
+                                        <h5>Web Development</h5>
+                                    </div>
+                                </Carousel>
+                            </div>
                         </div>
+                    }
+                    </TrackVisibility>
+                        
                     </Col>
                 </Row>
             </Container>

@@ -2,6 +2,10 @@
   border: 1px red solid;
 } */
 
+.checkBorder {
+  border: 2px red solid;
+}
+
 /* CUSTOM FONTS */
 @font-face {
   font-family: Centra;
