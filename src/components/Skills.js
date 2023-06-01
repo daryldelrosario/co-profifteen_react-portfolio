@@ -34,7 +34,7 @@ function Skills() {
             <Container>
                 <Row>
                     <Col>
-                    <TrackVisibility partialVisibility>
+                    <TrackVisibility offset={500}>
                     {({ isVisible }) => 
                         <div className={isVisible ? "animate__animated animate__slideInLeft" : ""}>
                             <div className="skill-bx">
