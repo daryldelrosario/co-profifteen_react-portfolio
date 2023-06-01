@@ -6,6 +6,8 @@ import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 
 function Footer() {
+    const currentYear = new Date().getFullYear();
+
     return (
         <footer className="footer">
             <Container>
@@ -20,7 +22,7 @@ function Footer() {
                             <a href=""><img src={navIcon2} /></a>
                             <a href=""><img src={navIcon3} /></a>
                         </div>
-                        <p>CopyRight 2023. All Rights Reserved</p>
+                        <p>Daryl del Rosario &#169; {currentYear}. All Rights Reserved</p>
                     </Col>
                 </Row>
             </Container>
