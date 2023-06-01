@@ -22,6 +22,10 @@ function Contact() {
         })
     }
 
+    const handleSubmit = () => {
+        
+    }
+
     return (
         <section className="contact" id="contact">
             <Container>
@@ -31,7 +35,7 @@ function Contact() {
                     </Col>
                     <Col md={6}>
                         <h2>Get In Touch</h2>
-                        <form>
+                        <form onSubmit={handleSubmit}>
                             <Row>
                                 <Col sm={6} className="px-1">
                                     <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)}/>
