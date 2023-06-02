@@ -46,7 +46,7 @@ function Projects() {
             <Container>
                 <Row>
                     <Col>
-                        <TrackVisibility offset={500}>
+                        <TrackVisibility offset={100}>
                         {({ isVisible }) => 
                             <div className={isVisible ? "animate__animated animate__zoomInRight" : ""}>
                                 <div className="project-bx">
