@@ -30,14 +30,14 @@ function Skills() {
       };
 
     return(
-        <section className="skill" id="skills">
+        <section className="skill">
             <Container>
                 <Row>
                     <Col>
                     <TrackVisibility offset={500}>
                     {({ isVisible }) => 
                         <div className={isVisible ? "animate__animated animate__zoomInLeft" : ""}>
-                            <div className="skill-bx">
+                            <div className="skill-bx" id="skills">
                                 <h2>
                                     Skills
                                 </h2>
