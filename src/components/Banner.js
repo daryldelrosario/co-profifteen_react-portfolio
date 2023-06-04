@@ -74,7 +74,9 @@ function Banner () {
                                 <p className="about-me">
                                     Hello world! I'm a software developer equipped with JavaScript. Able to full stack with Java and MySQL. On top of that, I'm an elite problem solver, life long learner and a very grateful husband and father!
                                 </p>
-                                <button onClick={() => console.log("connect")}>Let's Connect <ArrowRightCircle size={25}/></button>
+                                <a href="#contact" id="banner-link">
+                                    <button>Let's Connect <ArrowRightCircle size={25}/></button>
+                                </a>
                             </div>}
                         </TrackVisibility>
                     </Col>
