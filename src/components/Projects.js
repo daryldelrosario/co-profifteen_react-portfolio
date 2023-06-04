@@ -10,33 +10,33 @@ import TrackVisibility from 'react-on-screen';
 function Projects() {
     const projects = [
         {
-            title: "Business Startup",
-            description: "Design & Development",
+            title: "Frontend",
+            description: "These are",
             imgUrl: projImg1,
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
+            title: "Framework",
+            description: "fillers for now.",
             imgUrl: projImg2,
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
+            title: "Focused",
+            description: "Will update",
             imgUrl: projImg3,
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
+            title: "Showcase",
+            description: "this section once",
             imgUrl: projImg1,
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
+            title: "Projects",
+            description: "sifted and sorted",
             imgUrl: projImg2,
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
+            title: "Thank You!",
+            description: "through my github repo.",
             imgUrl: projImg3,
         },
     ]
@@ -52,7 +52,7 @@ function Projects() {
                                 <div className="project-bx">
                                     <h2>Projects</h2>
                                     <p>
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur maiores error omnis voluptate eveniet, temporibus fuga officia. Voluptatum illum magni, quod, labore eum eveniet facilis quas tenetur doloribus quidem in.
+                                        Completed projects that showcase frontend frameworks including html, css, javascript and react. Backend frameworks including jquery and mysql. Fullstack apps created with java, thymeleaf and springboot. Currently just fillers.
                                     </p>
                                 </div>
                             </div>
@@ -61,13 +61,13 @@ function Projects() {
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                 <Nav.Item>
-                                    <Nav.Link eventKey="first">Tab One</Nav.Link>
+                                    <Nav.Link eventKey="first">Frontend</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="second">Tab Two</Nav.Link>
+                                    <Nav.Link eventKey="second">Backend</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="third">Tab Three</Nav.Link>
+                                    <Nav.Link eventKey="third">Fullstack</Nav.Link>
                                 </Nav.Item>
                             </Nav>
                             <Tab.Content>
@@ -86,10 +86,10 @@ function Projects() {
                                     </Row>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="second">
-                                    Lorem Ipsum
+                                    Backend Framework Focused Projects
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="third">
-                                    Lorem Ipsum
+                                    Fullstack Web Applications
                                 </Tab.Pane>
                             </Tab.Content>
                         </Tab.Container>
