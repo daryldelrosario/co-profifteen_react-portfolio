@@ -1,8 +1,12 @@
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
 import ProjectCard from './ProjectCard';
-import projImg1 from '../assets/img/project-filler1.png';
-import projImg2 from '../assets/img/project-img2.png';
-import projImg3 from '../assets/img/project-img3.png';
+import projectFiller1 from '../assets/img/project-filler1.png';
+import projectFiller2 from '../assets/img/project-filler2.png';
+import projectFiller3 from '../assets/img/project-filler3.png';
+import projectFiller4 from '../assets/img/project-filler4.png';
+import projectFiller5 from '../assets/img/project-filler5.png';
+import projectFiller6 from '../assets/img/project-filler6.png';
+
 import colorSharp2 from '../assets/img/color-sharp2.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -12,32 +16,32 @@ function Projects() {
         {
             title: "Frontend",
             description: "These are",
-            imgUrl: projImg1,
+            imgUrl: projectFiller1,
         },
         {
             title: "Framework",
             description: "fillers for now.",
-            imgUrl: projImg2,
+            imgUrl: projectFiller2,
         },
         {
             title: "Focused",
             description: "Will update",
-            imgUrl: projImg3,
+            imgUrl: projectFiller3,
         },
         {
             title: "Showcase",
             description: "this section once",
-            imgUrl: projImg1,
+            imgUrl: projectFiller4,
         },
         {
             title: "Projects",
             description: "sifted and sorted",
-            imgUrl: projImg2,
+            imgUrl: projectFiller5,
         },
         {
             title: "Thank You!",
             description: "through my github repo.",
-            imgUrl: projImg3,
+            imgUrl: projectFiller6,
         },
     ]
 
