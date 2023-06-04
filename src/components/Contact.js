@@ -87,7 +87,7 @@ function Contact() {
             setButtonText('Sending ...');
 
             setTimeout(() => {
-                setButtonText('Send');
+                setButtonText('Successfully Sent');
                 setStatus({ success: true, message: 'Message sent successfully' });
     
                 setTimeout(() => {

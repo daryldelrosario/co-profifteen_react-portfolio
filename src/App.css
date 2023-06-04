@@ -596,8 +596,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .contact-success-message {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: forestgreen;
-  font-size: 1rem;
+  color: lightgreen;
+  font-size: small;
 }
 
 .contact form input, .contact form textarea {
