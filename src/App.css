@@ -688,6 +688,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.2em;
 }
 
+.newsletter-message {
+  padding: 1rem;
+}
+
 .new-email-bx {
   background: #fff;
   padding: 5px;
@@ -738,10 +742,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 500;
   letter-spacing: 0.5px;
   border-radius: 18px;
-}
-
-.newsletter-message {
-  padding: 1rem;
 }
 
 .footer img {

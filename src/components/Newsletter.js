@@ -3,6 +3,12 @@ import { useState, useEffect } from 'react';
 
 function Newsletter({ onValidated, status, message }) {
     const [email, setEmail] = useState('');
+    const [showError, setShowError] = useState(false);
+
+    const clearFields = () => {
+        setEmail('');
+        window.location.reload();
+    }
     
     useEffect(() => {
         if(status === "success")  clearFields();
@@ -10,16 +16,18 @@ function Newsletter({ onValidated, status, message }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        email && 
-        email.indexOf("@") > -1 && 
-        onValidated({
-            EMAIL: email
-        })
-    }
 
-    const clearFields = () => {
-        setEmail('');
-    }
+        if(email && email.indexOf('@') > -1 ) {
+            onValidated({
+                EMAIL: email
+            });
+            setShowError(false);
+        } else {
+            setShowError(true);
+        }
+    };
+
+    
 
     return (
         <Col lg={12}>
@@ -31,15 +39,20 @@ function Newsletter({ onValidated, status, message }) {
                     <Col md={6} xl={7}>
                         <form onSubmit={handleSubmit}>
                             <div className="new-email-bx">
-                                <input value={email} type="email" onChange={(e) => setEmail(e.target.value)} placeholder="Email Address"/>
+                                <input 
+                                    value={email} 
+                                    type="email" 
+                                    onChange={(e) => setEmail(e.target.value)} placeholder="Email Address"
+                                />
                                 <button type="submit">Submit</button>
                             </div>
                         </form>
                     </Col>
                     <div className="newsletter-message">
-                    {status === "sending" && <Alert>Sending ...</Alert>}
+                        {status === "sending" && <Alert>Sending ...</Alert>}
                         {status === "error" && <Alert variant="danger">{message}</Alert>}
                         {status === "success" && <Alert variant="success">{message}</Alert>}
+                        {showError && <Alert variant="danger">Please enter a valid email address</Alert>}
                     </div>
                 </Row>
             </div>
