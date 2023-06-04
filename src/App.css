@@ -568,12 +568,41 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 30px;
 }
 
+.contact-error {
+  border: 1px solid red;
+  background: rgb(240, 128, 128, 0.5);
+}
+
+.contact-normal {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.contact-success {
+  border: 1px solid green;
+  background: lightgreen;
+}
+
+.contact-center {
+  text-align: center;
+}
+
+.contact-error-message {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: lightcoral;
+  font-size: small;
+}
+
+.contact-success-message {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: forestgreen;
+  font-size: 1rem;
+}
+
 .contact form input, .contact form textarea {
   width: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 20px;
-  color: #fff;
   margin: 0 0 8px 0;
   padding: 18px 26px;
   font-weight: 500;
