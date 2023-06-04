@@ -740,6 +740,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 18px;
 }
 
+.newsletter-message {
+  padding: 1rem;
+}
+
 .footer img {
   width: 26%;
 }
