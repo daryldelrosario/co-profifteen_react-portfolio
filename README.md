@@ -42,17 +42,16 @@ To run the React application, use the following command:
 ```
 npm start
 ```
-This command starts the development server and opens the application in your default web browser. Any changes you make to the source code will automatically refresh the page.
 
 ## Deployment
-The application can be deployed to GitHub Pages. Follow the steps below to deploy on your own GitHub:
+Follow the steps below to deploy on your own GitHub:
 
-### 1. Open `package.json` and re-configure the homepage to your own github repo:
+1. Open `package.json` and re-configure the homepage to your own github repo:
 ```
 "homepage": "https://<github_username>.github.io/<github_repository_name>"
 ```
 
-### 2. Deploy the application to GitHub pages using the following command:
+2. Deploy the application to GitHub pages using the following command:
 ```
 npm run deploy
 ```
