@@ -24,17 +24,17 @@ This repository contains a React application. Below you will find instructions o
 
 To get started, follow these steps:
 
-### 1. Clone this repository to your local machine using the following command:
+#### 1. Clone this repository to your local machine using the following command:
 ```
 git clone <repository_url>
 ```
 
-### 2. Change into the project directory
+#### 2. Change into the project directory
 ```
 cd <root directory>
 ```
 
-### 3. Install the dependencies by running the following command:
+#### 3. Install the dependencies by running the following command:
 ```
 npm install
 ```
