@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Created a simple react portfolio to showcase projects from the past. Inspired by @judygab and guided by her tutorial via <a href="https://youtu.be/hYv6BM2fWd8">Youtube: Webdecoded</a>. 
+Created a simple react portfolio to showcase projects from the past. Inspired by <a href="https://github.com/judygab">@judygab</a> and guided by her tutorial via <a href="https://youtu.be/hYv6BM2fWd8">Youtube: Webdecoded</a>. 
 
 ## <a href="https://daryldelrosario.github.io/co-profifteen_react-portfolio/">Live Demo Site</a>
 
