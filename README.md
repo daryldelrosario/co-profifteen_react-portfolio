@@ -20,8 +20,6 @@ Created a simple react portfolio to showcase projects from the past. Inspired by
 - Template for project showcase
 
 ## Installation Instructions
-This repository contains a React application. Below you will find instructions on how to set up and run the application.
-
 To get started, follow these steps:
 
 #### 1. Clone this repository to your local machine using the following command:
