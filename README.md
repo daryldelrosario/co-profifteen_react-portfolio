@@ -25,7 +25,7 @@ To get started, follow these steps:
 1. Clone this repository to your local machine using the following command:
 ```
 git clone <repository_url>
-```
+```   
 
 2. Change into the project directory
 ```
